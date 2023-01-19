@@ -8,7 +8,7 @@ with open('encoding.txt', 'r') as my_file:
     my_txt = my_file.readline()
     txt_compress = my_txt.split()
 
-print(my_txt)
+#print(my_txt)
 
 def file_encod(txt):
     encond = ''
@@ -34,4 +34,5 @@ txt_compress = file_encod(my_txt)
 
 with open('coding.txt', 'w', encoding='UTF-8') as my_file:
     my_file.write(f'{txt_compress}')
-print(txt_compress)
+print(f'Сжатый текст -> {txt_compress}')
+print(f'Исходный текст -> {my_txt}')
